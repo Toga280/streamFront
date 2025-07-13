@@ -60,7 +60,7 @@ function App() {
   const wsRef = useRef<WebSocket | null>(null)
 
   useEffect(() => {
-    const ws = new WebSocket('ws://localhost:3000')
+    const ws = new WebSocket('ws://stream-952533578754.europe-west1.run.app/')
     wsRef.current = ws
 
     ws.onopen = () => {
